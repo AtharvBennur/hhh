@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>3D Viewer - iPhone 14 Pro Max</title>
+    <style>
+        /* Reset and Global Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Heading Styling */
+        h1 {
+            margin: 20px 0;
+            font-size: 28px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            padding: 10px 20px;
+        }
+
+        /* 3D Viewer Styling */
+        spline-viewer {
+            align-self: center;
+            display: block;
+            width: 90%;
+            height: 70vh;
+            border: 2px solid #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Cards Container */
+        .cards-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            width: 90%;
+            gap: 20px;
+        }
+
+        /* Card Styling */
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 30%;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: #fff;
+        }
+
+        .card:hover {
+            background-color: rgba(255, 255, 255, 0.162);
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 30%;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: #fff;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* New Section Styling */
+        .section {
+            width: 90%;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        /* Pricing */
+        .pricing {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .pricing .price {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .pricing .price h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 30px;
+            padding: 20px 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            text-align: center;
+            border-top: 1px solid #fff;
+            color: #aaa;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+
+            .pricing {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .pricing .price {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>The iPhone 14 Pro Max</h1>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.51/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/yaze91JtY1ecr0xI/scene.splinecode"></spline-viewer>
+
+    <!-- Product Information Cards -->
+    <div class="cards-container">
+        <div class="card">
+            <h2>Innovation Redefined</h2>
+            <p>The iPhone 14 Pro Max elevates smartphone technology with its revolutionary Dynamic Island, A16 Bionic chip, and 48MP main camera for stunning details. Built for reliability and beauty, it redefines innovation.</p>
+        </div>
+        <div class="card">
+            <h2>Powerful Performance</h2>
+            <p>With the A16 Bionic chip, the iPhone 14 Pro Max delivers unmatched speed and efficiency. Enjoy buttery-smooth visuals on the 6.7-inch Super Retina XDR display with ProMotion technology.</p>
+        </div>
+        <div class="card">
+            <h2>Stay Connected</h2>
+            <p>Experience all-day battery life, Emergency SOS via satellite, and crash detection for ultimate safety. Crafted with surgical-grade stainless steel, it’s durable and ready for anything.</p>
+        </div>
+    </div>
+
+    <!-- New Section: Features -->
+    <div class="section">
+        <h2>Key Features</h2>
+        <p>The iPhone 14 Pro Max comes with some of the latest features including the new Dynamic Island, a 48MP camera for incredible photos, and the powerful A16 Bionic chip.</p>
+    </div>
+
+    <!-- New Section: Specifications -->
+    <div class="section">
+        <h2>Specifications</h2>
+        <p><strong>Display:</strong> 6.7-inch Super Retina XDR Display<br>
+        <strong>Chip:</strong> A16 Bionic Chip<br>
+        <strong>Camera:</strong> 48MP Main Camera, 12MP Ultra-Wide, 12MP Telephoto, LiDAR Scanner<br>
+        <strong>Battery Life:</strong> Up to 29 hours of video playback<br>
+        <strong>Storage Options:</strong> 128GB, 256GB, 512GB, 1TB</p>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="section">
+        <h2>Pricing</h2>
+        <div class="pricing">
+            <div class="price">
+                <h3>128GB Model</h3>
+                <p>$1,099</p>
+            </div>
+            <div class="price">
+                <h3>256GB Model</h3>
+                <p>$1,199</p>
+            </div>
+            <div class="price">
+                <h3>512GB Model</h3>
+                <p>$1,399</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Reviews Section -->
+    <div class="section">
+        <h2>Customer Reviews</h2>
+        <p>"The iPhone 14 Pro Max is an absolute powerhouse! The performance is fast, the camera is incredible, and the display is stunning." - John D.</p>
+        <p>"I love the Dynamic Island feature! It adds a whole new level of interaction with the phone." - Sarah L.</p>
+        <p>"Battery life lasts all day even with heavy use. Highly recommend it!" - Mark T.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Support</a>
+        </p>
+    </footer>
+</body>
+</html>
